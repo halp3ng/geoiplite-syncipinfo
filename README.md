@@ -50,7 +50,7 @@ geoip-data sync from ipinfo_lite
 
 本项目采用混合许可模式，以区分工具代码与第三方数据：
 
-### 1. 仓库代码 (MIT License)
+### 1. 仓库代码 (Apache-2.0 license)
 本仓库中的 GitHub Actions 配置文件、脚本及文档等代码部分，采用 Apache-2.0 license 开源。你可以自由使用、修改和分发这些代码。
 
 ### 2. GeoIP 数据 (CC BY-SA 4.0)
