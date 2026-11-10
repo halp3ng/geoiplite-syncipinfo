@@ -43,4 +43,4 @@ GeoIP 数据版权归 [IPinfo](https://ipinfo.io) 所有，使用需遵守其服
 ## 参考与致谢
 - [IPinfo 官方文档](https://ipinfo.io/developers)
 - [IPinfo Lite 数据库说明](https://ipinfo.io/data)
-- [OPNsense GeoIP 配置指南](https://docs.opnsense.org/manual/how-tos/geoip.html)
+- [OPNsense GeoIP 配置指南]((https://docs.opnsense.org/manual/how-tos/ipinfo_geo_ip.html))
