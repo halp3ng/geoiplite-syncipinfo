@@ -19,7 +19,7 @@ jobs:
       - name: Download IPinfo Lite (prop-format CSV.gz)
         env:
           # 不把 token 写这里，改用仓库 Secret 注入
-          IPINFO_TOKEN: ***}
+          IPINFO_TOKEN: ${{ secrets.IPINFO_TOKEN }}
         run: |
           set -e
           # -L 跟随重定向; -f 让 HTTP 4xx/5xx 直接报错而不是把错误页当文件下载
