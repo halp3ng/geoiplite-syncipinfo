@@ -22,6 +22,10 @@ jobs:
           mkdir -p ./dist
           curl -fSL -o ./dist/geoip-lite.csv.gz \
             "https://ipinfo.io/data/ipinfo_lite.csv.gz?token=${IPINFO_TOKEN}"
+          # 二次完整性校验：必须是 gzip。ipinfo 限流/异常时可能返回 200 + HTML 页，
+          file ./dist/geoip-lite.csv.gz | grep -qi gzip || { echo "ERROR: not gzip"; exit 1; }
+          # 再挡一层空文件/极小文件
+          test "$(stat -c%s ./dist/geoip-lite.csv.gz)" -gt 100000 || { echo "ERROR: file too small"; exit 1; }
           echo "Downloaded file size: $(du -h ./dist/geoip-lite.csv.gz | cut -f1)"
 
       - name: Generate Weekly CalVer Tag
