@@ -47,7 +47,7 @@ jobs:
 
             **Permanent download link:**
             ```
-            https://github.com/ $ {{ github.repository }}/releases/latest/download/geoip-lite.csv.gz
+            https://github.com/halp3ng/geoiplite-syncipinfo/releases/latest/download/geoip-lite.csv.gz
 
             ```
           files: ./dist/geoip-lite.csv.gz
